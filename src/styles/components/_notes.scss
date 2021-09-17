@@ -1,4 +1,4 @@
-.notes_main-content {
+.notes__main-content {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -11,4 +11,39 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 20px;
+}
+
+.notes__content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 20px;
+}
+
+.notes__title-input,
+.notes__textarea {
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.notes__title-input {
+	color: $dark-grey;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.notes__textarea {
+	color: $dark-grey;
+	font-size: 20px;
+	resize: none;
+	flex: 1 1 auto;
+}
+
+.notes__image img {
+	height: 150px;
+	box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3);
 }
